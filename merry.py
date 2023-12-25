@@ -1,6 +1,6 @@
 import numpy as np
 # import arxiv
-# import nltk
+import nltk
 # nltk.download('punkt')
 
 def be_merry():
