@@ -1,5 +1,7 @@
 import numpy as np
 #import arxiv
+import nltk
+nltk.download('punkt')
 
 def be_merry():
 #  paper = next(arxiv.Client().results(arxiv.Search(id_list = ["2107.09200"])))
