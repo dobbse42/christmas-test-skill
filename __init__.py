@@ -1,4 +1,5 @@
 from mycroft import MycroftSkill, intent_file_handler
+import numpy as np
 
 from .merry import be_merry
 
@@ -11,6 +12,7 @@ class ChristmasTest(MycroftSkill):
     def handle_test_christmas(self, message):
         self.speak_dialog('test.christmas')
         my_msg = be_merry()
+        my_arr = np.ones(10)
         self.speak(my_msg)
 
 
