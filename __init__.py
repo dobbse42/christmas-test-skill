@@ -1,7 +1,7 @@
 from mycroft import MycroftSkill, intent_file_handler
 import numpy as np
 
-from .merry import be_merry
+from .merry import be_merry, nth_day
 
 
 class ChristmasTest(MycroftSkill):
@@ -14,6 +14,7 @@ class ChristmasTest(MycroftSkill):
         my_msg = be_merry()
         my_arr = np.ones(10)
         self.speak(my_msg)
+        self.speak(nth_day())
 
 
 def create_skill():
