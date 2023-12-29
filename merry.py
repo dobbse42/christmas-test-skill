@@ -11,7 +11,7 @@ def be_merry():
   url = 'http://export.arxiv.org/api/query?search_query=all:electron&start=0&max_results=1'
   data = urllib.request.urlopen(url)
 #  print(data.read().decode('utf-8'))
-  return data
+  return data.read().decode('utf-8')
 
 
 def nth_day():
