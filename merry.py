@@ -1,13 +1,17 @@
 import numpy as np
-import arxiv
-import nltk
-nltk.download('punkt')
+import urllib, urllib.request
+#import arxiv
+#import nltk
+#nltk.download('punkt')
 
 def be_merry():
 #  paper = next(arxiv.Client().results(arxiv.Search(id_list = ["2107.09200"])))
 #  my_filename = paper.get_short_id() + '_' + paper.title.replace(' ', '_') + '.pdf'
 #  return my_filename
-  return "be merry"
+  url = 'http://export.arxiv.org/api/query?search_query=all:electron&start=0&max_results=1'
+  data = urllib.request.urlopen(url)
+#  print(data.read().decode('utf-8'))
+  return data
 
 
 def nth_day():
