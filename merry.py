@@ -1,5 +1,7 @@
 import numpy as np
 import urllib, urllib.request
+import requests
+import feedparser
 #import arxiv
 #import nltk
 #nltk.download('punkt')
