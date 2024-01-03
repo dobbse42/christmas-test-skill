@@ -4,7 +4,7 @@ nltk.download('punkt')
 import pypdf
 from nltk.tokenize import sent_tokenize
 from io import BytesIO
-import new_arxiv_handler
+from .new_arxiv_handler import get_pdf, get_feed
 
 class Paper:
 
